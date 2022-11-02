@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+export USE_HERMES=true
+
 # If the build runs from XCode, we cannot use yarn.
 # Check first which yarn executable is appropriate
 package_manager_test_command="bin" # both `yarn bin` and `npm bin` are valid commands
