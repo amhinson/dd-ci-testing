@@ -23,7 +23,7 @@ config.sessionSamplingRate = 100;
 // You need to specify the hosts of your backends to enable tracing with these backends
 config.resourceTracingSamplingRate = 100;
 
-await DdSdkReactNative.initialize(config);
+DdSdkReactNative.initialize(config);
 
 const App = () => {
   return (
