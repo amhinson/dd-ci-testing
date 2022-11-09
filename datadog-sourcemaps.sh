@@ -16,6 +16,6 @@ test_and_set_package_manager_bin "/opt/homebrew/bin/node /opt/homebrew/bin/yarn"
 echo "package manager not found"
 
 REACT_NATIVE_XCODE="node_modules/react-native/scripts/react-native-xcode.sh"
-DATADOG_XCODE="$(echo $PACKAGE_MANAGER_BIN) datadog-ci react-native xcode"
+DATADOG_XCODE="$(echo $PACKAGE_MANAGER_BIN) datadog-ci react-native xcode --force"
 
 /bin/sh -c "$DATADOG_XCODE $REACT_NATIVE_XCODE"
